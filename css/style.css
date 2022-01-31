@@ -161,32 +161,58 @@ margin: 18px 0px;
     margin: 30px 0px;
     font-family: 'Roboto', sans-serif;
     margin-top: 70px;
-
 }
-.features{
+#features{
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-around;
+    height: 500px;
 }
-.info{
-    margin: 15px 5px;
-    padding: 10px;
-    width: 40%;
+#features .box-right{
+    width: 33.33%;
+    float: right;
+    margin: 5px ;
+    padding: 5px;
 }
-.information{
-    margin: 15px 5px;
-    padding: 10px;
-    width: 40%;
+.box-right h2{
+    float: right;
+    font-size: 25px; 
+    margin: 8px;
+    color: grey;
 }
-.info1{
-    margin: 30px 0px;
-    margin-left: 280px;
+.box-right p{
+    float: right; 
+    margin-left: 190px;
+    font-size: 20px;
+    padding: 4px;
+    color: grey;
+}
+#features .box-center{
+    width: 33.33%;
+    float: right;
+    margin: 5px 100px;
+    width: 200px;
+    padding: 5px;
+}
+#features .box-left{
+    width: 33.33%;
+    float: left;
+    margin: 5px ;
+    margin-left: 70px;
+    padding: 5px;
+}
+.box-left h2{
+    float: left;
+    font-size: 25px; 
+    margin: 8px;
+    color: grey;
+}
+.box-left p{
+    float: left; 
+    margin-right: 190px;
+    font-size: 20px;
+    padding: 4px;
+    color: grey;
+}
 
-}
-.info2{
-    margin: 30px 0px;
-    margin-left: 50px;
-}
 .fimage img{
     margin-top: 30px;
     height: 500px;
@@ -194,7 +220,7 @@ margin: 18px 0px;
 #screen{
 display: flex;
 margin: 35px;
-margin-top: 100px;
+margin-top: 170px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -225,20 +251,32 @@ align-items: center;
 #services{
     margin: 34px;
     display: flex;
+    align-items: center;
 }
 #services .box{
     border: 2px solid grey ;
     width: 40%;
-    height: 250px;
+    height: 300px;
 }
 #services .box img{
     display: block;
     margin: auto;
 }
+.box i{
+    display: block;
+    margin: 25px 242px;
+    font-size: 30px;
+    color: rgb(218, 213, 213);
+}
+
 .box p{
-    margin: 30px; 
-    font-family: 'Dongle', sans-serif;
-    font-size: 20px;      
+    margin: 10px; 
+    font-size: 20px; 
+    color: grey;     
+}
+.box h3{
+    color: grey;  
+    font-size: 18px;
 }
 #pricing{
     display: flex;
@@ -255,7 +293,7 @@ align-items: center;
 .planing{
     display: flex;
     margin: 0px 20px;
-    background-color: silver;
+    background-color:rgb(241, 236, 236);
 }
 .plans ul{
     margin: 10px; 
@@ -280,17 +318,20 @@ align-items: center;
     font-size: 60px;
     text-align: center;
     font-family: 'Dongle', sans-serif;
+    height: 50px;
 }
 .plans h4{
     display: block;
-    margin: 0px 98px;
-    width: 70px;
-    height: 30px;
-    border: 2px solid black;
-    padding: 4px 5px;
-    border-radius: 22px;
+    align-items:  center;
+    margin:auto;
+    padding-left: 15px;
+    padding-bottom: 15px;
     background-color: yellow;
+    border: 2px solid yellow;
     font-size: 28px;
+    border-radius: 22px;
+    width: 80px;
+    height: 23px;
     font-family: 'Dongle', sans-serif;
 
 }
@@ -299,7 +340,7 @@ align-items: center;
    width: 150px;
    height: 50px;
    margin: auto;
-   border: 2px solid black;
+   border: 2px solid grey;
    border-radius: 24px;
    background-color:grey ;
    color: white;
@@ -321,7 +362,7 @@ align-items: center;
 }
 #get::before{
     content: "";
-    background-color:skyblue;
+    background-color:#3e60af;
     position: absolute;
     height: 100%;
     width: 100%;
