@@ -2,14 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.font {
-  font-family: "Dongle", sans-serif;
-  font-size: 40px;
-}
-.font1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-}
 .divider {
   width: 100px;
   height: 2px;
@@ -17,50 +9,40 @@
   display: inline-block;
   margin: 5px;
 }
-
 #navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
-  height: 100px;
+  /* height: 100px; */
   top: 0px;
   left: 0px;
   overflow: hidden;
 }
-.items {
-  font-family: "Dongle", sans-serif;
-  /* font-size: 50px; */
-}
-#navbar::before {
-  content: "";
-  background: url(img/into-bg.jpg);
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.8;
-}
 #logo {
-  margin: 30px 62px;
+  width: 50px;
+  height: 30px;
+  padding: 0px 10px;
+  margin: 2px 5px;
 }
-h1 {
+#logo h1 {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
   color: white;
 }
+
 #navbar ul {
   display: flex;
-  margin-left: 75px;
+  margin-left: 100px;
 }
 #navbar ul li {
   list-style: none;
-  font-size: 1.5rem;
 }
 #navbar ul li a {
   display: block;
   margin: 0px 3px;
-  padding: 10px 20px;
+  padding: 8px;
   border-radius: 22px;
   text-decoration: none;
   color: white;
@@ -72,11 +54,12 @@ h1 {
 }
 .btn {
   display: block;
-  padding: 10px 20px;
+  width: 100px;
+  padding: 10px;
   border: 2px solid black;
   color: black;
   background-color: white;
-  margin: 15px;
+  margin: 3px;
   border-radius: 22px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -90,8 +73,6 @@ h1 {
 #home {
   display: flex;
   flex-direction: column;
-  padding: 5px 100px;
-  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   margin: 20px 5px;
@@ -99,7 +80,7 @@ h1 {
 }
 #home::before {
   content: "";
-  background-color: rgb(60, 60, 126);
+  background: url("../intro-bg.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   top: 0px;
@@ -108,21 +89,20 @@ h1 {
   z-index: -1;
   opacity: 0.9;
 }
-
-.main1 {
-  font-size: 80px;
-  font-family: "Dongle", sans-serif;
+#home .home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 15px;
+  padding: 10px;
 }
-#home h4 {
-  color: blanchedalmond;
+#home .home2 {
+  margin: 5px 0px;
+  padding: 5px;
 }
 #home img {
-  width: 15vw;
-  height: 60vh;
-  margin: 10px 0px;
-}
-.max-size {
-  font-size: 70px;
+  margin: 30px 0px;
 }
 #about {
   display: flex;
@@ -130,29 +110,63 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 150px;
 }
-.about {
-  margin: 20px 25px;
-  padding: 20px;
+#about h2 {
+  color: grey;
+  size: 40px;
 }
-#like {
+#about h3 {
+  color: grey;
+  size: 30px;
+  margin: 5px 0px;
+  padding: 2px 3px;
+}
+.like {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.like::before {
+  content: "";
+  background: url("../like.jpg") no-repeat center center/cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   margin: 40px 0px;
+  z-index: -1;
 }
 #content {
   display: flex;
-  padding: 20px;
-  margin: 18px 0px;
+  margin: 60px 0px;
+  align-items: center;
+  justify-content: space-around;
 }
-.content1 {
-  margin-left: 27px;
-  margin-top: 40px;
+#content .content-right {
+  margin: 0px 70px;
+  width: 50%;
 }
-.content1 p {
-  margin: 10px;
+.content-left h2 {
+  font-size: 30px;
+  margin: 15px 0px;
+  color: grey;
 }
-.content1 img {
-  margin: 15px;
-  width: 15vw;
+.content-left p {
+  margin: 5px 0px;
+  padding: 6px;
+  color: grey;
+  font-size: 22px;
+}
+#content .content-left {
+  margin: 0px 110px;
+  width: 50%;
+}
+.content-left img {
+  margin: 15px 0px;
+  width: 180px;
 }
 #feature {
   display: flex;
@@ -165,7 +179,7 @@ h1 {
 }
 #features {
   display: flex;
-  height: 500px;
+  /* height: 500px; */
 }
 #features .box-right {
   width: 33.33%;
@@ -220,20 +234,40 @@ h1 {
 }
 #screen {
   display: flex;
-  margin: 35px;
-  margin-top: 170px;
+  margin: 20px;
+  margin-top: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#screens {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 #screens img {
-  height: 400px;
   width: 250px;
-  margin-left: 40px;
-  margin-bottom: 60px;
+  margin: 80px 0px;
 }
 .center {
   text-align: center;
+}
+.watch {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watch::before {
+  content: "";
+  background: url("../watch.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 40px 0px;
+  z-index: -1;
 }
 #user {
   display: flex;
@@ -241,16 +275,17 @@ h1 {
   align-items: center;
   justify-content: center;
   font-family: "Dongle", sans-serif;
-  margin: 50px 0px;
+  margin-top: 100px;
 }
 #user h2 {
-  font-size: 55px;
-}
-#user p {
   font-size: 30px;
 }
+#user p {
+  font-size: 18px;
+  margin: 8px;
+}
 #services {
-  margin: 34px;
+  margin: 35px;
   display: flex;
   align-items: center;
 }
@@ -262,6 +297,7 @@ h1 {
 #services .box img {
   display: block;
   margin: auto;
+  clip-path: circle();
 }
 .box i {
   display: block;
@@ -293,6 +329,8 @@ h1 {
 }
 .planing {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0px 20px;
   background-color: rgb(241, 236, 236);
 }
@@ -309,43 +347,51 @@ h1 {
 .plans h3 {
   color: white;
   background-color: grey;
-  font-size: 60px;
-  text-align: center;
-  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* font-family: "Dongle", sans-serif; */
   height: 80px;
 }
 .plans h2 {
   color: black;
-  font-size: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-family: "Dongle", sans-serif;
-  height: 50px;
+  margin: 10px;
+
+  /* font-family: "Dongle", sans-serif; */
+  height: 30px;
 }
 .plans h4 {
   display: block;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  padding-left: 15px;
-  padding-bottom: 15px;
+  margin: 0px auto;
+  padding: 5px;
   background-color: yellow;
   border: 2px solid yellow;
-  font-size: 28px;
-  border-radius: 22px;
+  font-size: 18px;
+  border-radius: 23px;
   width: 80px;
-  height: 23px;
-  font-family: "Dongle", sans-serif;
+  height: 16px;
+  /* font-family: "Dongle", sans-serif; */
 }
 .start {
   display: block;
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
   margin: auto;
   border: 2px solid grey;
-  border-radius: 24px;
+  border-radius: 28px;
   background-color: grey;
   color: white;
   font-family: "Dongle", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 30px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -353,16 +399,24 @@ h1 {
 .get {
   display: flex;
   margin: 35px;
-  margin-top: 100px;
+  margin-top: 120px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   position: relative;
+}
+.get h2 {
+  color: white;
+  font-size: 35px;
+}
+.get p {
+  color: white;
+  font-size: 18px;
 }
 .get::before {
   content: "";
-  background-color: #3e60af;
+  background-color: #5b56d7;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -370,6 +424,10 @@ h1 {
   left: 0px;
   z-index: -1;
   opacity: 0.8;
+}
+.content1 img {
+  width: 200px;
+  margin: 15px 0px;
 }
 .btn1 {
   border-radius: 27px;
@@ -393,19 +451,26 @@ h1 {
 }
 .details {
   border-bottom: 1px solid grey;
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   margin-top: 25px;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
 }
+.details i {
+  font-size: 15px;
+  color: black;
+  display: block;
+  float: right;
+  margin: 4px;
+}
 .details h2 {
   outline: none;
   font-size: 20px;
 }
 .text {
-  margin: 5px 0px;
+  margin: 10px 0px;
   font-size: 20px;
 }
 .tell p {
@@ -447,7 +512,7 @@ form {
 .contact-right {
   flex-basis: 70%;
   padding: 40px;
-  background-color: rgb(192, 178, 178);
+  background-color: #f8f9fa;
   color: black;
 }
 .contact-right h3 {
